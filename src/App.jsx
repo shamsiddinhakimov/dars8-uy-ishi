@@ -26,13 +26,11 @@ function App() {
     id: Date.now(),
     name:inputRef.current.value()
   }
-  let data = [];
-  if(localStorage.getItem('todos')){
-    data = JSON.parse(localStorage.getItem('todos'));
-  }
+  dataLocal.push(todo)
+  setDataLocal(dataLocal)
 
   data.push(todo)
-  localStorage.setItem('todos',JSON.stringify(data))
+  localStorage.setItem('todos',JSON.stringify(dataLocal))
   inputRef.current.value ='';
 
 
