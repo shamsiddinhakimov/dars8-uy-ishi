@@ -17,8 +17,9 @@ function App() {
       <li>
        
        <div>
-       <span>Kitob oqish</span>
        <input type="checkbox" />
+       <span>Kitob oqish</span>
+       
        </div>
         <span>
         <span>update</span>
