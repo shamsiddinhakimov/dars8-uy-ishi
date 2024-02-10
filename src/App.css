@@ -42,6 +42,9 @@ ul li{
     display: flex;
     gap: 10px;
     justify-content: space-between;
+    background-color: aqua;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 
