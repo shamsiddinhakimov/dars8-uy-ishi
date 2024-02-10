@@ -2,8 +2,20 @@
 import './App.css'
 
 import { useRef,useEffect,useState } from 'react'
+
+
 function App() {
   const inputRef = useRef('')
+  cosnt [dataLocal,setDataLocal] = useState([]);
+  useEffect(()=>{
+    let data = [];
+    if(localStorage.getItem('todos')){
+      data = JSON.parse(localStorage.getItem('todos'))
+    }
+
+    setDataLocal(data);
+  },[]);
+  
   if(inputRef.current.valueOf.trim().lenght < 3){
     alert('3 ta dan kam belgi kiritilmasin')
     inputRef.current.focus()
