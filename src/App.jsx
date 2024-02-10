@@ -16,11 +16,11 @@ function App() {
     setDataLocal(data);
   },[]);
 
-  if(inputRef.current.valueOf.trim().lenght < 3){
-    alert('3 ta dan kam belgi kiritilmasin')
-    inputRef.current.focus()
+  if(inputRef.current.value.trim().length < 3){
+    alert('3 ta dan kam belgi kiritilmasin');
+    inputRef.current.focus();
     return;
-  }
+  };
 
   const todo = {
     id: Date.now(),
