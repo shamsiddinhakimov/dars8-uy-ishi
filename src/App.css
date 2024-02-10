@@ -50,7 +50,7 @@ ul li{
 
 input [type='checkbox']{
     margin-right: 10px;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 .actions span{
     margin-right: 10px;
