@@ -5,7 +5,7 @@ import { useRef,useEffect,useState } from 'react'
 
 
 function App() {
-  const inputRef = useRef('')
+  let inputRef = useRef('');
   cosnt [dataLocal,setDataLocal] = useState([]);
   useEffect(()=>{
     let data = [];
