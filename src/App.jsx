@@ -6,7 +6,7 @@ import { useRef,useEffect,useState } from 'react'
 
 function App() {
   let inputRef = useRef('');
-  cosnt [dataLocal,setDataLocal] = useState([]);
+  const [dataLocal,setDataLocal] = useState([]);
   useEffect(()=>{
     let data = [];
     if(localStorage.getItem('todos')){
