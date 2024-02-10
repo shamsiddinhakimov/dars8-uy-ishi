@@ -21,7 +21,7 @@ function App() {
        <span>Kitob oqish</span>
        
        </div>
-        <span>
+        <span className='actions'>
         <span>update</span>
         <span>delete</span>
 

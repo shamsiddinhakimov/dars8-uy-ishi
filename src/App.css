@@ -41,3 +41,12 @@ ul li{
     gap: 10px;
     justify-content: space-between;
 }
+
+
+input [type='checkbox']{
+    margin-right: 10px;
+}
+.actions span{
+    margin-right: 10px;
+    cursor: pointer;
+}
