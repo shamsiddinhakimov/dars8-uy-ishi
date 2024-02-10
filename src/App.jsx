@@ -52,7 +52,7 @@ function App() {
        
           <div>
           <input type="checkbox" />
-          <span>Kitob oqish</span>
+          <span>{todo.name}</span>
           
           </div>
            <span className='actions'>
