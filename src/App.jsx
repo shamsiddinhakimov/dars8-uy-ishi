@@ -8,8 +8,10 @@ function App() {
     <>
    <h1>Todo app</h1>
     <div className="todo-wrapper">
+    <form>
     <input type="text" />
    <button>OK</button>
+    </form>
     <br />
     <ul>
       <li>
