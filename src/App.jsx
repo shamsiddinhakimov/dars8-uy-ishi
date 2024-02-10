@@ -6,7 +6,7 @@ function App() {
   
   return (
     <>
-   <h1>Todo app</h1>
+   <h1 className='h1'>Todo app</h1>
     <div className="todo-wrapper">
     <form>
     <input type="text" />
