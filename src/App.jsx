@@ -15,7 +15,7 @@ function App() {
 
     setDataLocal(data);
   },[]);
-  
+
   if(inputRef.current.valueOf.trim().lenght < 3){
     alert('3 ta dan kam belgi kiritilmasin')
     inputRef.current.focus()
@@ -46,19 +46,23 @@ function App() {
     </form>
     <br />
     <ul>
-      <li>
+      {dataLocal.map((todo,index)=>{
+        return(
+          <li key={index}>
        
-       <div>
-       <input type="checkbox" />
-       <span>Kitob oqish</span>
-       
-       </div>
-        <span className='actions'>
-        <span>update</span>
-        <span>delete</span>
-
-        </span>
-      </li>
+          <div>
+          <input type="checkbox" />
+          <span>Kitob oqish</span>
+          
+          </div>
+           <span className='actions'>
+           <span>update</span>
+           <span>delete</span>
+   
+           </span>
+         </li>
+        )
+      })}
     </ul>
     
     </div>
