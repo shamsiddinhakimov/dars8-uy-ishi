@@ -7,7 +7,8 @@ function App() {
   return (
     <>
    <h1>Todo app</h1>
-   <input type="text" />
+    <div className="todo-wrapper">
+    <input type="text" />
    <button>OK</button>
     <br />
     <ul>
@@ -22,6 +23,7 @@ function App() {
       </li>
     </ul>
     
+    </div>
     
    
     </>
